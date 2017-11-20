@@ -2,6 +2,8 @@
 
 This is an [AWS Lambda](https://aws.amazon.com/lambda/) function that fetches a daily top headline from [reddit](https://www.reddit.com). Using [Amazon Simple Notification Service](https://aws.amazon.com/sns/), it is able to send an SMS each day to a pre-configured phone number.
 
+Please note that [SNS only supports SMS messaging in a subset of regions](http://docs.aws.amazon.com/sns/latest/dg/sms_supported-countries.html). Please see the linked support document to ensure you deploy this application in a supported region.
+
 ## Deployment
 
 Deploying this serverless app to your AWS account is quick and easy using [AWS CloudFormation](https://aws.amazon.com/cloudformation/). 
